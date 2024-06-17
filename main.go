@@ -19,6 +19,7 @@ func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "input.html")
+		fmt.Printf("index.html")
 	})
 
 	http.HandleFunc("/submit", func(w http.ResponseWriter, r *http.Request) {
