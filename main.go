@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-const mongoURI = "mongodb+srv://eswar:eswar@cluster0.y0qjvno.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const mongoURI = "mongodb://mongo:eSFmYQgVMdmYjtwAzXgLKiLEVRDRWmCX@viaduct.proxy.rlwy.net:54410"
 
 const tomtomAPIKey = "N2NWaw1sogQ3oT2Rhn2GBTIuWnwIEckT"
 
