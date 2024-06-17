@@ -18,8 +18,12 @@ func main() {
 	}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "input.html")
-		fmt.Printf("index.html")
+		tmpl, err := template.ParseFiles("index.html")
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+		tmpl.Execute(w, nil)
 	})
 
 	http.HandleFunc("/submit", func(w http.ResponseWriter, r *http.Request) {
