@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"text/template"
 )
 
 const mongoURI = "mongodb://mongo:eSFmYQgVMdmYjtwAzXgLKiLEVRDRWmCX@viaduct.proxy.rlwy.net:54410"
