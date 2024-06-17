@@ -1,5 +1,5 @@
 [build]
-  buildCommand = "go build -o out main.go"
+  buildCommand = "go build -o out main.go mongo.go maps.go"
 
 [start]
   startCommand = "./out"
