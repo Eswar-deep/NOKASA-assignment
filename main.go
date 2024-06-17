@@ -24,7 +24,7 @@ func main() {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
-		fmt.printf("printing")
+		fmt.printf("printin")
 		tmpl.Execute(w, nil)
 	})
 
